@@ -3,7 +3,7 @@ import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 
 import { Item } from './interfaces/item.interface';
-import { CreateItemDto } from './dto/create-item.dto'; 
+import { CreateItemDto } from './dto/create-item.dto';
 
 @Injectable()
 export class ItemsService {
