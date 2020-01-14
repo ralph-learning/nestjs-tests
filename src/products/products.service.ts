@@ -13,6 +13,10 @@ export class ProductsService {
     return await this.productModel.find();
   }
 
+  async findOne(id: string): Promise<Product> {
+    return await this.productModel.findOne({ _id: id });
+  }
+
   async create(product: CreateProductsDto): Promise<Product> {
     const newProduct = new this.productModel(product);
     return await this.productModel.create(newProduct);
